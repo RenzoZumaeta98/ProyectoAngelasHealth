@@ -194,6 +194,7 @@ namespace SolClinicaHealth.Migrations
                     IdCita = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UsuarioIdUsuario = table.Column<int>(nullable: true),
+                    EspecialidadIdEspecialidad = table.Column<int>(nullable: true),
                     DoctorIdDoctor = table.Column<int>(nullable: true),
                     FechaCita = table.Column<DateTime>(nullable: false),
                     HoraCita = table.Column<string>(nullable: true),
@@ -207,6 +208,12 @@ namespace SolClinicaHealth.Migrations
                         column: x => x.DoctorIdDoctor,
                         principalTable: "Doctor",
                         principalColumn: "IdDoctor",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Cita_Especialidad_EspecialidadIdEspecialidad",
+                        column: x => x.EspecialidadIdEspecialidad,
+                        principalTable: "Especialidad",
+                        principalColumn: "IdEspecialidad",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Cita_Usuario_UsuarioIdUsuario",
@@ -350,6 +357,11 @@ namespace SolClinicaHealth.Migrations
                 name: "IX_Cita_DoctorIdDoctor",
                 table: "Cita",
                 column: "DoctorIdDoctor");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cita_EspecialidadIdEspecialidad",
+                table: "Cita",
+                column: "EspecialidadIdEspecialidad");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Cita_UsuarioIdUsuario",

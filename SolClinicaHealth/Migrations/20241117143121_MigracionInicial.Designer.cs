@@ -10,8 +10,8 @@ using SolAngeSolClinicaHealthla_sHealth.DataAccess;
 namespace SolClinicaHealth.Migrations
 {
     [DbContext(typeof(AngelasHealthContext))]
-    [Migration("20231110004055_SegundaMigration")]
-    partial class SegundaMigration
+    [Migration("20241117143121_MigracionInicial")]
+    partial class MigracionInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -3,81 +3,98 @@
     ViewData["Title"] = "PaginaUsuario";
 }
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light  mb-5">
-    <a class="navbar-brand" href="#"><img src="../images/logoangelashealth.png" style="width: 130px" /></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Especialidades</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Doctores</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Ayuda</a>
-            </li>
-        </ul>
-        <button class="btn btn-secondary my-2 my-sm-0 m-1">@Model.NombreUsuario @Model.ApellidoUsuario</button>
-        <i class="fa-solid fa-user m-2" style="font-size:37px"></i>
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logoangelashealth.png" style="width: 130px;" alt="Logo Angela's Health" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doctores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ayuda</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <span class="me-3 fw-bold">@Model.NombreUsuario @Model.ApellidoUsuario</span>
+                <i class="fa-solid fa-user fa-2x"></i>
+            </div>
+        </div>
     </div>
 </nav>
 
-<div class="row p-3">
-    <div class="col-12">
-        <div class="row">
-            <div class="col-6 p-1" style="border: 1px solid black">
-                <div class="row m-2" style="width:500px; height:400px">
-                    <div class="col-md-6 align-self-center">
-                        <h2>Hola, @Model.NombreUsuario ¿Qué quieres hacer hoy?</h2>
-                    </div>
-                    <div class="col-md-6 align-self-center">
-                        <img src="~/images/imagenbanner1.png" style="width:220px" />
-                    </div>
+<div class="container mt-5 pt-5">
+    <div class="row g-4">
+        <!-- Bienvenida -->
+        <div class="col-md-6">
+            <div class="p-4 shadow-sm rounded bg-light d-flex align-items-center">
+                <div class="me-4">
+                    <h2 class="mb-3">Hola, @Model.NombreUsuario</h2>
+                    <p>¿Qué quieres hacer hoy?</p>
                 </div>
+                <img src="~/images/imagenbanner1.png" class="img-fluid" style="width: 200px;" alt="Banner">
             </div>
-            <div class="col-6" style="border: 1px solid black">
-                <div class="row">
-                    <div class="col-md-12 p-4" style="width:500px; height:100px; border: 1px solid black">
-                        <form method="post" asp-controller="Cita" asp-action="AgendarCita">
-                            <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
-                            <button class="btn btn-primary btn-lg disabled" type="submit">Agendar Cita</button>
-                            <i class="fa-solid fa-hospital-user m-2" style="font-size: 30px"></i>
-                        </form>
-                    </div>
+        </div>
+
+        <!-- Opciones -->
+        <div class="col-md-6">
+            <div class="row g-3">
+                <!-- Botón: Agendar Cita -->
+                <div class="col-12">
+                    <form method="post" asp-controller="Cita" asp-action="AgendarCita">
+                        <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
+                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-between p-3 shadow-sm" type="submit">
+                            <span>Agendar Cita</span>
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 p-4" style="width:500px; height:100px; border: 1px solid black">
-                        <form method="post" asp-controller="Cita" asp-action="ListarCitas">
-                            <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
-                            <button class="btn btn-primary btn-lg disabled" type="submit">Historial de Citas</button>
-                            <i class="fa-solid fa-notes-medical m-2" style="font-size: 30px"></i>
-                        </form>
-                    </div>
+
+                <!-- Botón: Historial de Citas -->
+                <div class="col-12">
+                    <form method="post" asp-controller="Cita" asp-action="ListarCitas">
+                        <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
+                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-between p-3 shadow-sm" type="submit">
+                            <span>Historial de Citas</span>
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 p-4" style="width:500px; height:100px; border: 1px solid black">
-                        <form method="post" asp-controller="Cita" asp-action="">
-                            <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
-                            <button class="btn btn-primary btn-lg disabled" type="submit">Mis Doctores</button>
-                            <i class="fa-solid fa-user-doctor m-2" style="font-size: 30px"></i>
-                        </form>
-                    </div>
+
+                <!-- Botón: Mis Doctores -->
+                <div class="col-12">
+                    <form method="post" asp-controller="Cita" asp-action="ListarDoctores">
+                        <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
+                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-between p-3 shadow-sm" type="submit">
+                            <span>Mis Doctores</span>
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 p-4" style="width:500px; height:100px; border: 1px solid black">
-                        <form method="post" asp-controller="Cita" asp-action="">
-                            <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
-                            <button class="btn btn-primary btn-lg disabled" type="submit">Editar Perfil</button>
-                            <i class="fa-solid fa-pen m-2" style="font-size: 30px"></i>
-                        </form>
-                    </div>
+
+                <!-- Botón: Editar Perfil -->
+                <div class="col-12">
+                    <form method="post" asp-controller="Cita" asp-action="EditarPerfil">
+                        <input type="hidden" asp-for="IdUsuario" value="@Model.IdUsuario">
+                        <button class="btn btn-primary w-100 d-flex align-items-center justify-content-between p-3 shadow-sm" type="submit">
+                            <span>Editar Perfil</span>
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

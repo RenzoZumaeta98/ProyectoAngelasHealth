@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\views\\login\\paginausuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\views\\login\\paginausuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\models\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\dataaccess\\entities\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\dataaccess\\entities\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|c:\\users\\renzo\\onedrive\\documentos\\cibertec\\ciclo v\\proyectos\\proyecto experiencias formativas\\solclinicahealth\\solclinicahealth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F362CF8-00F1-4641-B36B-FDD5B5C78BEF}|SolClinicaHealth\\SolClinicaHealth.csproj|solutionrelative:solclinicahealth\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SolClinicaHealth\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T22:29:24.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaginaUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Login\\PaginaUsuario.cshtml",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\Views\\Login\\PaginaUsuario.cshtml",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Login\\PaginaUsuario.cshtml",
+              "RelativeToolTip": "SolClinicaHealth\\Views\\Login\\PaginaUsuario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T22:04:46.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SolClinicaHealth\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T18:59:50.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SolClinicaHealth\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T18:59:26.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Models\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\Models\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Models\\UsuarioViewModel.cs",
+              "RelativeToolTip": "SolClinicaHealth\\Models\\UsuarioViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:14:28.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "SolClinicaHealth\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAnwCIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T13:58:48.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioEntity.cs",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\DataAccess\\Entities\\UsuarioEntity.cs",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\DataAccess\\Entities\\UsuarioEntity.cs",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\DataAccess\\Entities\\UsuarioEntity.cs",
+              "RelativeToolTip": "SolClinicaHealth\\DataAccess\\Entities\\UsuarioEntity.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:03:15.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\appsettings.json",
+              "RelativeDocumentMoniker": "SolClinicaHealth\\appsettings.json",
+              "ToolTip": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\appsettings.json",
+              "RelativeToolTip": "SolClinicaHealth\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-17T13:49:41.281Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

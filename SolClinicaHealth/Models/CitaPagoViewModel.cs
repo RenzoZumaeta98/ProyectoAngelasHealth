@@ -1,6 +1,4 @@
-﻿using SolClinicaHealth.DataAccess.Entities;
-
-namespace SolClinicaHealth.Models
+﻿namespace SolClinicaHealth.Models
 {
     public class CitaPagoViewModel
     {

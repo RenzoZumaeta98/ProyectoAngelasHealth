@@ -3,31 +3,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light  mb-5">
-    <a class="navbar-brand" href="#"><img src="../images/logoangelashealth.png" style="width: 130px" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Especialidades</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Doctores</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Ayuda</a>
-            </li>
-        </ul>
-        <button class="btn btn-secondary my-2 my-sm-0 m-1" type="button" data-toggle="modal" data-target="#RegistrarModal">Registrarse</button>
-        <button class="btn btn-light my-2 my-sm-0 m-1 border-dark" type="button" data-toggle="modal" data-target="#IngresarModal">Iniciar Sesion</button>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+	<a class="navbar-brand" href="#"><img src="../images/logoangelashealth.png" alt="Logo" style="width: 130px;" /></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Nosotros</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Especialidades</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Doctores</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Ayuda</a>
+			</li>
+		</ul>
+		<button class="btn btn-primary my-2 my-sm-0 m-1" type="button" data-toggle="modal" data-target="#RegistrarModal">Registrarse</button>
+		<button class="btn btn-outline-secondary my-2 my-sm-0 m-1" type="button" data-toggle="modal" data-target="#IngresarModal">Iniciar Sesión</button>
+	</div>
 </nav>
 
+
+<div class="container mt-5 pt-5">
 <div class="row p-3">
     <div class="col-12">
         <div class="row">
@@ -66,164 +68,167 @@
         </div>
     </div>
 </div>
+</div>
 
-<div class="row p-3 mt-5 mb-5 align-items-center" style="border: 1px solid black; border-radius:25px">
-    <div class="col-md-4">
-        <h2>Encuentranos muy cerca de ti</h2>
-    </div>
-    <div class="col-md-7">
-        <a><img src="../images/mapaclinica.png" style="width:500px"/></a>
-    </div>
+<div class="container my-5 py-5 bg-light shadow-sm rounded">
+	<div class="row align-items-center">
+		<div class="col-md-4">
+			<h3 class="text-primary">Encuéntranos cerca de ti</h3>
+			<p>Estamos ubicados en diversos puntos de la ciudad para tu comodidad.</p>
+		</div>
+		<div class="col-md-8 text-center">
+			<img src="../images/mapaclinica.png" alt="Mapa Clínica" class="img-fluid rounded">
+		</div>
+	</div>
 </div>
 
 
 @* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// *@
 
 <div class="modal fade" id="RegistrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<form method="post" asp-controller="Usuario" asp-action="RegistrarUsuario">
-			
-			<input type="hidden" asp-for="TipoUsuario" value="1">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="exampleModalLabel">Registro</h1>
-					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-				</div>
+    <div class="modal-dialog modal-lg">
+        <form method="post" asp-controller="Usuario" asp-action="RegistrarUsuario">
+            <input type="hidden" asp-for="TipoUsuario" value="1">
+            <div class="modal-content">
+                <!-- Encabezado -->
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Usuario</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-				<div class="form-group text-center m-2">
-					<img src="~/images/logoangelashealth.png" alt="140" width="340" />
-				</div>
+                <!-- Cuerpo del Modal -->
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <img src="~/images/logoangelashealth.png" alt="Logo" width="250" />
+                        <p class="mt-2 text-muted">Completa la información para registrarte en nuestra clínica.</p>
+                    </div>
+                    <!-- Sección de información personal -->
+                    <h6 class="text-primary">Información Personal</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="NombreUsuario">Nombre</label>
+                                <input type="text" asp-for="NombreUsuario" class="form-control" placeholder="Ingresa tu nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="ApellidoUsuario">Apellido</label>
+                                <input type="text" asp-for="ApellidoUsuario" class="form-control" placeholder="Ingresa tu apellido" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="CorreoUsuario">Correo Electrónico</label>
+                                <input type="email" asp-for="CorreoUsuario" class="form-control" placeholder="ejemplo@correo.com" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="CelularUsuario">Teléfono</label>
+                                <input type="text" asp-for="CelularUsuario" class="form-control" placeholder="Ingresa tu número de celular" required>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Sección de información adicional -->
+                    <h6 class="text-primary mt-4">Información Adicional</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="TipoDocumento">Tipo de Documento</label>
+                                <select asp-for="TipoDocumento" class="form-control">
+                                    <option value="" disabled selected>Selecciona...</option>
+                                    <option value="1">DNI</option>
+                                    <option value="2">Carné de Extranjería</option>
+                                    <option value="3">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label asp-for="NroDocumentoUsuario">Número de Documento</label>
+                                <input type="text" asp-for="NroDocumentoUsuario" class="form-control" placeholder="Ingresa tu número de documento" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="FechaNacUsuario">Fecha de Nacimiento</label>
+                                <input type="date" asp-for="FechaNacUsuario" class="form-control" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label asp-for="GeneroUsuario">Género</label>
+                                <select asp-for="GeneroUsuario" class="form-control">
+                                    <option value="" disabled selected>Selecciona...</option>
+                                    <option value="F">Femenino</option>
+                                    <option value="M">Masculino</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
 
-				<div class="modal-body">
+                    <!-- Sección de credenciales -->
+                    <h6 class="text-primary mt-4">Credenciales</h6>
+                    <div class="form-group">
+                        <label asp-for="ClaveUsuario">Contraseña</label>
+                        <input type="password" asp-for="ClaveUsuario" class="form-control" placeholder="Ingresa una contraseña segura" required>
+                    </div>
+                </div>
 
-
-
-					<div class="row">
-
-						<div class="col">
-
-							<label asp-for="NombreUsuario">Nombre</label>
-							<input type="text" asp-for="NombreUsuario" required class="form-control">
-						</div>
-						<div class="col">
-							<label asp-for="CorreoUsuario">Correo</label>
-							<input placeholder="demo@demo.com" asp-for="CorreoUsuario" required type="text" class="form-control">
-						</div>
-						<div class="col">
-
-							<label asp-for="DireccionUsuario">Direccion</label>
-							<input type="text" asp-for="DireccionUsuario" required class="form-control">
-						</div>		
-
-					</div>
-
-					<div class="row mt-3">
-
-						<div class="col">
-							<label asp-for="ApellidoUsuario">Apellido</label>
-							<input type="text" asp-for="ApellidoUsuario" required class="form-control">
-						</div>
-
-						<div class="col">
-
-							<label asp-for="CelularUsuario">Celular</label>
-							<input  type="text" asp-for="CelularUsuario" required class="form-control">
-						</div>
-
-						<div class="col">
-
-							<label asp-for="FechaNacUsuario">Fecha de Nacimiento  </label>
-							<input placeholder="dd/mm/yyyy" asp-for="FechaNacUsuario" required type="date" class="form-control" id="fecha" style="width:270px">
-
-						
-						</div>
-						
-
-					</div>
-
-					<div class="row mt-3">
-
-						<div class="col">
-
-							<label asp-for="TipoDocumento">Documento</label>
-							<select asp-for="TipoDocumento" style="width:240px; height:40px">
-								<option value="" disabled selected>Seleccione documento...</option>
-								<option value="1">DNI</option>
-								<option value="2">Carne Extranjeria</option>
-								<option value="3">Pasaporte</option>
-							</select>
-							<input placeholder="Numero Documento" asp-for="NroDocumentoUsuario" required type="text" class="form-control mt-3">
-						</div>
-
-						<div class="col">
-							<label asp-for="GeneroUsuario">Genero</label>
-							<select asp-for="GeneroUsuario" style="width:240px; height:40px">
-								<option value="" disabled selected>Seleccione genero...</option>
-								<option value="F">Femenino</option>
-								<option value="M">Masculino</option>
-							</select>
-						</div>
-
-						<div class="col">
-							<label asp-for="ClaveUsuario">Clave</label>
-							<input asp-for="ClaveUsuario" required type="password" class="form-control">
-						</div>
-						
-
-					</div>
-
-
-					<div class="row mt-3">
-
-						
-
-					</div>
-
-				</div>
-
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					<input type="submit" class="btn btn-primary" value="Registrar">
-				</div>
-
-			</div>
-		</form>
-	</div>
+                <!-- Pie del Modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 
 
-@* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// *@
-<div class="modal fade" id="IngresarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			
-			<div class="modal-body">
-				<form method="post" asp-controller="Login" asp-action="PaginaUsuario">
-					<div class="form-group text-center">
-						<h3>LOGIN</h3>
-                        <img src="../images/logoangelashealth.png" width="240" />
-						<br>
-						<label>Bienvenido al sistema</label>
-					</div>
-					<br>
-					<div class="mb-3">
-						<label asp-for="CorreoUsuario">Correo</label>
-						<input placeholder="demo@demo.com" asp-for="CorreoUsuario" required type="text" class="form-control">
-						<div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más.</div>
-					</div>
-					<div class="mb-3">
-						<label asp-for="ClaveUsuario">Clave</label>
-						<input asp-for="ClaveUsuario" required type="password" class="form-control">
-					</div>
-					<button type="submit" class="btn btn-danger">Ingresar</button>
-					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="">Olvide mi contraseña</button>
-				</form>
-			</div>
-			<div class="modal-footer">
-			</div>
-		</div>
-	</div>
+<div class="modal fade" id="IngresarModal" tabindex="-1" aria-labelledby="IngresarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="IngresarModalLabel">Inicio de Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-controller="Login" asp-action="PaginaUsuario">
+                    <div class="text-center mb-4">
+                        <img src="../images/logoangelashealth.png" alt="Logo de Angela's Health" width="240" class="img-fluid mb-3">
+                        <p class="fw-bold">Bienvenido al sistema</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="CorreoUsuario" class="form-label">Correo electrónico</label>
+                        <input type="email"
+                               asp-for="CorreoUsuario"
+                               id="CorreoUsuario"
+                               placeholder="demo@demo.com"
+                               class="form-control"
+                               required>
+                        <div id="emailHelp" class="form-text">Tu correo está seguro con nosotros.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ClaveUsuario" class="form-label">Contraseña</label>
+                        <input type="password"
+                               asp-for="ClaveUsuario"
+                               id="ClaveUsuario"
+                               placeholder="Ingresa tu contraseña"
+                               class="form-control"
+                               required>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <a href="#" class="btn btn-link text-decoration-none">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 

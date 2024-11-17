@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolClinicaHealth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a40b3ea824235fa2cd4fa1874cc13c42a508c1c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolClinicaHealth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolClinicaHealth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

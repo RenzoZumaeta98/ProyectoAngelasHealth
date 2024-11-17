@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yJKwOMfrqKyqd/qyEy24MOfD4CqAwGDgJ3xg3D+kNYlStByRRD+Qk1sLO7C3YA2KyYCyxmdlEk91tSIXPW5pFQ==",
+  "dgSpecHash": "DEQ0QVmQEdU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\renzo\\Documents\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\SolClinicaHealth.csproj",
+  "projectFilePath": "C:\\Users\\renzo\\OneDrive\\Documentos\\CIBERTEC\\CICLO V\\PROYECTOS\\Proyecto Experiencias Formativas\\SolClinicaHealth\\SolClinicaHealth\\SolClinicaHealth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\renzo\\.nuget\\packages\\automapper\\6.1.1\\automapper.6.1.1.nupkg.sha512",
     "C:\\Users\\renzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\3.1.0\\automapper.extensions.microsoft.dependencyinjection.3.1.0.nupkg.sha512",
